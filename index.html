@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+                  #div1 {
+      width: 80%;
+      background-color: rgb(255, 255, 255);
+      float: left;
+    }
+
+    #div2 {
+      width: 20%;
+      margin-left: 80%;
+      height: 100%;
+      background-color: rgb(63, 67, 67);
+      float: right;
+      color:white;
+      position:fixed
+      
+    }
+    h4{
+      font-style: italic;
+      padding: 5%;
+    }
+    section{
+      font-size: 18px;
+      line-height: 130%;
+    }
+
+      nav {
+        text-align: center;
+        background-color: rgb(192, 191, 190);
+        margin-top: -3%;
+        color:white
+      }
+      nav ul {
+        display: inline-block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav li {
+        display: inline-block;
+        margin-right: 10px;
+      }
+      nav li:last-child {
+        margin-right: 0;
+      }
+      nav a {
+        display: block;
+        padding: 10px;
+        color: black;
+        text-decoration: none;
+      }
+      h1 {
+        text-align: center;
+        background-color: rgb(63, 67, 67);
+        color: white;
+        margin-top: -0.5%;
+        height: 80px;
+        text-align: center;
+        justify-content: center;
+        padding-top: 2%;
+      }
+      b{
+        font-size: larger;
+      }
+      h4 a {
+  color: white;
+  text-decoration: none; /* remove underline by default */
+}
+p a {
+  color: black;
+  text-decoration: none; /* remove underline by default */
+}
+section{
+  text-align: justify;
+}
+
+h4 a:hover , p a:hover{
+  text-decoration: underline; /* show underline on hover */
+}
+    </style>
+  </head>
+  <body>
+    <h1>Auditing Drivers of Eating Disorders Online</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" style="color:blueviolet">Home</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="github.html">Github</a></li>
+      </ul>
+    </nav>
+  </body>
+  <div id="div1">
+    <p style="text-align: center;">For resources and help, visit &nbsp;<a href="https://www.nationaleatingdisorders.org/help-support/contact-helpline">National Eating Disorders Association (NEDA) </a>, &nbsp;(800) 931-2237</p>
+    <section style="padding: 5%;" id="section1">
+      <b>Introduction</b><br/><br/>
+      Eating disorders are a serious mental health condition characterized by obsessive thoughts and unhealthy behaviors around food, eating, body weight and shape. Eating disorders represent a major public health concern. First, they are common: about 24 million people in the US struggle with an eating disorder, such as anorexia, bulimia, or binge eating disorder. Moreover, eating disorders can have severe physical and emotional consequences, and are among the deadliest of all mental health conditions, second only to opioid addiction in mortality rate. More than 10,000 people die each year and many more have their health compromised due to medical complications from the disease.
+      <br/>
+      Eating disorders start early in life, with typical age of onset around 14 to 16. In addition, their prevalence in a population has grown from 3.5% for the 2000-2006 period to 7.8% for the 2013-2018 period. During the Covid-19 pandemic, the incidence of eating disorders further skyrocketed, particularly among girls.
+    </section>
+    <section style="padding: 5%;" id="section2">
+      <b>Social Media Platforms and Online Communities</b><br/><br/>
+      Online communities can offer people struggling with eating disorders several benefits, such as a sense of belonging, a platform to vent, share their experiences, seek validation, and share advice on coping strategies and treatment options. However, such support may actually be toxic as it reinforces unhealthy behaviors or beliefs about food and body weight. For example, tips to stave off hunger or encouragement to prolong a fast promotes eating disorder behaviors. To quantify these interactions, we measure a range of emotions expressed in pro-ED tweets.
+      <br/><br/>
+      &bull; Adolescents turn to social media for health information, which includes dieting and weight-loss advice<br/>
+      &bull; Strongly interconnected with self-harm communities (non-suicidal self-injury)<br/>
+      &bull; Share group identity, exchange tips, extreme dieting and exercise plans, motivating images. Twitter has little moderation.
+      <br/><br/>
+      Pro-ana communities are online spaces, originally on blogs, online forums, but also increasingly on social media platforms, that promote "anorexia as a lifestyle not an illness." Pro-ana communities provide a venue for individuals with eating disorders to share tips on losing weight and concealing weight loss from others, as well as "thinspiration" images of very thin bodies to motivate weight loss. Researchers have argued that pro-ana communities have both positive and negative effects on individuals with eating disorders.
+    </section>
+    <section id="section3"  style="padding:5%">
+      <b>Data</b><br/>
+      <h5> Twitter</h5>
+      We construct a dataset containing 2.6M tweets using keywords to query Twitter for messages covering the periods from 2022-10 to 2023-03. Information collected on tweets includes screenname, timestamp, message content, and hashtags. These keywords cover a variety of topics related to eating disorder topics (thinspo, proana, etc.), dieting and weight-loss topics (ketodiet, weightloss, etc.), and anti-diet culture topics (bodypositivity, dietculture, etc.).
+    </section>
+    <section style="padding: 5%;" id="section4">
+      <b>Results</b><br/>
+      <h5> Twitter</h5><br/>
+      We measure emotions in tweet textual content using SpanEmo, which is a state-of-the-art model for text-based emotion analysis. We focus on emotions expressed in pro-ED (eating disorder) tweets, including anger, sadness, anxiety, and hopelessness, among others. By analyzing these emotions, we aim to gain a better understanding of the online discourse surrounding eating disorders and identify potential risks and opportunities for intervention and support.
+      <div id="images-emo" style="padding-top: 5%; justify-content: center; margin-left: 20%; margin-right: 50%;">
+      <img src="Assets/emo1.png"></img>
+      <img src="Assets/emo2.png"></img>
+      <img src="Assets/emo3.png"></img>
+      <br/>
+    </div>
+      A hashtag co-occurrence graph is a network that represents
+relationships between hashtags in a set of social media posts.
+An edge between two hashtags exists if they appear to-
+gether in a post, with the weight of the edge represent-
+ing the number of times the two hashtags co-occur. Vari-
+ous centrality metrics are used to quantify the connectivity
+and communicability of a node to other nodes in the net-
+work. These include betweenness centrality, which identifies
+‘bridge’ nodes by quantifying the number of times a node
+acts as a single bridge or connector along the shortest path
+between two other nodes
+    <div id="images-net" style="padding-top: 5%; justify-content: center; margin-left: 20%; margin-right: 50%;">
+      <img src="Assets/mat1.png"></img>
+    </div>
+   
+    </section>
+    
+    
+    
+    
+    
+  </div>
+  <div id="div2">
+    <div id="inner" style="padding: 5%">
+    <h2> <b> Content</b></h2>
+    <h4> <a href="#section1" style="color: white">A) Introduction</a></h4>
+    <h4> <a href="#section2" style="color: white">B) Social Media Platforms and Online Communities</a></h4>
+    <h4> <a href="#section3" style="color: white">B) Data</a></h4>
+    <h4> <a href="#section4" style="color: white">C) Results</a></h4>
+     </div>
+     </div>
+     </div>
+  </div>
+</html>
