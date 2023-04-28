@@ -15,7 +15,8 @@
       background-color: rgb(63, 67, 67);
       float: right;
       color:white;
-      position:fixed
+      position:fixed;
+      top:0
       
     }
     h4{
@@ -27,10 +28,10 @@
       line-height: 130%;
     }
 
-      nav {
+    nav {
         text-align: center;
         background-color: rgb(192, 191, 190);
-        margin-top: -3%;
+        margin-top: -1%;
         color:white
       }
       nav ul {
@@ -46,6 +47,7 @@
       nav li:last-child {
         margin-right: 0;
       }
+     
       nav a {
         display: block;
         padding: 10px;
@@ -59,7 +61,7 @@
         margin-top: -0.5%;
         height: 80px;
         text-align: center;
-        justify-content: center;
+
         padding-top: 2%;
       }
       b{
@@ -95,7 +97,7 @@ h4 a:hover , p a:hover{
   <div id="div1">
     <p style="text-align: center;">For resources and help, visit &nbsp;<a href="https://www.nationaleatingdisorders.org/help-support/contact-helpline">National Eating Disorders Association (NEDA) </a>, &nbsp;(800) 931-2237</p>
     <section style="padding: 5%;" id="section1">
-      <b>Introduction</b><br/><br/>
+      <b>Introduction and Motivation</b><br/><br/>
       Eating disorders are a serious mental health condition characterized by obsessive thoughts and unhealthy behaviors around food, eating, body weight and shape. Eating disorders represent a major public health concern. First, they are common: about 24 million people in the US struggle with an eating disorder, such as anorexia, bulimia, or binge eating disorder. Moreover, eating disorders can have severe physical and emotional consequences, and are among the deadliest of all mental health conditions, second only to opioid addiction in mortality rate. More than 10,000 people die each year and many more have their health compromised due to medical complications from the disease.
       <br/>
       Eating disorders start early in life, with typical age of onset around 14 to 16. In addition, their prevalence in a population has grown from 3.5% for the 2000-2006 period to 7.8% for the 2013-2018 period. During the Covid-19 pandemic, the incidence of eating disorders further skyrocketed, particularly among girls.
@@ -154,12 +156,15 @@ h4 a:hover , p a:hover{
           </tr>
         </tbody>
       </table>
+      <h5>Tumblr</h5>
+      To gather the data required for this study, we leveraged PyTumblr, a Python interface to the Tumblr API. This tool allowed us to programmatically access and download Tumblr posts. Our script was configured to specifically seek out posts that contained hashtags or content related to eating disorders. 
+      As part of our analysis, we found that hashtags typically associated with broad, general topics such as dieting, fitness, and overall health are increasingly being used within posts promoting or discussing eating disorders
       
     </section>
    
     <section style="padding: 5%;" id="section4">
       <b>Results</b><br/>
-      <h5> Twitter</h5><br/>
+      <h5> Twitter</h5>
       We measure emotions in tweet textual content using SpanEmo, which is a state-of-the-art model for text-based emotion analysis. We focus on emotions expressed in pro-ED (eating disorder) tweets, including anger, sadness, anxiety, and hopelessness, among others. By analyzing these emotions, we aim to gain a better understanding of the online discourse surrounding eating disorders and identify potential risks and opportunities for intervention and support.
       <div id="images-emo" style="padding-top: 5%; justify-content: center;">
       <img src="emo1.png"></img>
@@ -181,10 +186,10 @@ between two other nodes
     <div id="images-net" style="padding-top: 5%; justify-content: center;">
       <img src="mat1.png"></img>
     </div>
-    <h5> Eating Disorder Support Forums</h5><br/>
+    <h5> Eating Disorder Support Forums</h5>
      Emotional analysis on the posts gives us the top three emotions as joy, optimism and anticipation. These prove that people in communities are gaining a positive experience as these communities offer support and ensure accountability.
-     <div id="images-emo" style="padding-top: 5%; justify-content: center; width: 50%; height:50%">
-      <img src="emo4.png" style="width:80%; height:70%"></img>
+     <div id="images-emo" style="padding-top: 5%; justify-content: center">
+      <img src="emo4.png" style="width:70%;height:50%"></img>
     </div><br/><br/>
     Reply to View ratios are used to find threads which are more engaging. A higher ratio indicates that the users are more likely to contribute to conversation. For instance, for Vegetarian/Vegan/Raw Food Diet, the threads with highest Reply to View ratio are:
     <br/><br/>
@@ -218,12 +223,38 @@ between two other nodes
         </tr>
       </tbody>
     </table>
-      
+    <h5> Tumblr</h5>
+    <div id="images-emo" style="padding-top: 5%; justify-content: center">
+      <img src="mat2.jpeg" style="width:90%" ></img>
+      <p style="justify-content: center; text-align: center;"> Co-occurrence hashtag network for Tumblr Data </p>
+    </div><br/><br/>
+
   
   </section>
    
     
-    
+    <section id="section5"  style="padding: 5%;" >
+      <b> Conclusion</b>
+      <ul>
+        <li>Social media and online communities play an increasingly important role in the transmission of deviant behaviors.</li>
+        <li>Poorly moderated online spaces enable such extreme behaviors to flourish.</li>
+        <li>Online communities normalize eating disorders and self-harm, making recovery more difficult.</li>
+      </ul>
+
+    </section>
+    <section id="section6"  style="padding: 5%;" >
+      
+      <b> Future Work</b>
+      <ul>
+      <li> Analyse how a user gets drawn to these eating disorder communities.</li>
+
+        <li>Perform Topic Modelling on data.</li>
+
+          <li>Understand how emotions of a person involved in these communities changes over time</li>
+
+        </ul>
+
+    </section>
     
     
   </div>
@@ -234,6 +265,8 @@ between two other nodes
     <h4> <a href="#section2" style="color: white">B) Social Media Platforms and Online Communities</a></h4>
     <h4> <a href="#section3" style="color: white">B) Data</a></h4>
     <h4> <a href="#section4" style="color: white">C) Results</a></h4>
+    <h4> <a href="#section5" style="color: white">D) Conclusion</a></h4>
+    <h4> <a href="#section6" style="color: white">E) Future Work</a></h4>
      </div>
      </div>
      </div>
